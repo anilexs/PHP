@@ -1,0 +1,31 @@
+body{
+    background-color: gray;
+}
+
+.div{
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+.numbe{
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+.input{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+form{
+    text-align: center;
+}
+.submit{
+    background-color: greenyellow;
+}
+.sup{
+    background-color: red;
+}
