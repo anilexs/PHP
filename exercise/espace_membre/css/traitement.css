@@ -1,0 +1,7 @@
+.dbimg{
+    background-image: url(../image/savdb.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 320px;
+    height: 320px;
+}

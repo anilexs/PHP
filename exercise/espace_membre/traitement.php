@@ -13,8 +13,9 @@ if(isset($_POST['submit'])){
     $nombre_elements = count($contenu) - 2;
 
     $imgName = $_FILES['img']['name'];
+    $imageCompose = $nombre_elements."_".$imgName;
     $tmpName = $_FILES['img']['tmp_name']; 
-    $destination = $_SERVER['DOCUMENT_ROOT'].'/PHP/exercise/espace_membre/image/'.$nombre_elements."_".$imgName;
+    $destination = $_SERVER['DOCUMENT_ROOT'].'/PHP/exercise/espace_membre/image/'. $imageCompose;
     move_uploaded_file($tmpName, $destination);
 
     $db = dbConnexion();
@@ -23,7 +24,7 @@ if(isset($_POST['submit'])){
 
 
     try {
-        $request->execute(array($email, $pseudo, $mdpCrypt, $imgName));
+        $request->execute(array($email, $pseudo, $mdpCrypt, $imageCompose));
     } catch (PDOException $e) {
         echo $e->getMessage();
     }
