@@ -46,6 +46,8 @@ if(isset($_POST['connexion'])){
             $_SESSION["id"] = $utilisateur['id_membre'];
             $_SESSION["pseudo"] = $utilisateur['pseudo'];
             $_SESSION["img"] = $utilisateur['profil_img'];
+
+            header("Location: accueil.php");
         }else{
             echo "mot de passe incorrect";
         }
