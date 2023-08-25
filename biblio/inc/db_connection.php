@@ -12,3 +12,4 @@ function dbConnexion(){
     }
     return $connexion;      
 }
+?>
