@@ -2,7 +2,9 @@
     box-sizing: border-box;
 
 }
-
+img{
+    display: block;
+}
 body{
     padding: 0;
     margin: 0;
@@ -10,7 +12,7 @@ body{
 }
 
 .container{
-    width: 60%;
+    width: 80%;
     margin: auto;
 }
 
@@ -53,6 +55,34 @@ button{
 .flex{
     display: flex;
 }
+#post{
+    display: flex;
+    flex-wrap: wrap;
+}
 .post{
     margin-left: 30px;
+}
+.posts{
+    display: flex;
+    width: 500px;
+    min-height: 250px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    font-size: 20px;
+}
+.imgpost{
+    height: 250px;
+    width: 250px;
+}
+.likebtn{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+span,.likebtn{
+    font-size: 30px;
+}
+.txt{
+    margin-left: 15px;
 }
