@@ -1,6 +1,10 @@
 <?php 
     session_start(); 
     // session_destroy();
+    echo "<pre>";
+    var_dump($_SESSION);
+    var_dump($_COOKIE);
+    echo "<pre>";
 ?>
 <!DOCTYPE html>
 <html lang="en">
