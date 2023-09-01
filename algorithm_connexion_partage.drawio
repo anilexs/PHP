@@ -1,0 +1,167 @@
+<mxfile host="app.diagrams.net" modified="2023-09-01T14:50:06.016Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="GgDanLl9JExPDpEazGiL" version="21.6.9" type="device">
+  <diagram name="Page-1" id="I_Wna3Df85W4K1fbsUE9">
+    <mxGraphModel dx="2607" dy="1378" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-1" value="Début&lt;br&gt;Page connexion" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="10" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-2" value="Création&lt;br&gt;Page formulaire de connexion&lt;br&gt;&lt;div style=&quot;text-align: left; font-size: 9px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;avec les 2 champs :&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-size: 9px;&quot;&gt;&lt;font color=&quot;#00cccc&quot; style=&quot;font-size: 9px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;1- email (ou pseudo)&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;2- mot de passe&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="318" y="110" width="193" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-3" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="QPgLkUB62LOAhg5g5HC0-2" target="QPgLkUB62LOAhg5g5HC0-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="200" as="sourcePoint" />
+            <mxPoint x="410" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="QPgLkUB62LOAhg5g5HC0-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="200" as="sourcePoint" />
+            <mxPoint x="415" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-5" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Les attributs importants sont utilisés :&lt;br&gt;&lt;font color=&quot;#00cccc&quot;&gt;action, method, type, name, value&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="309.5" y="250" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="QPgLkUB62LOAhg5g5HC0-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="390" as="sourcePoint" />
+            <mxPoint x="415" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-7" value="Validation&amp;nbsp; du formulaire&lt;br&gt;&amp;amp; redirection vers :&lt;br&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;la page de traitement&lt;font color=&quot;#00cccc&quot;&gt; &quot;security.php&quot;.&lt;/font&gt;&lt;br&gt;Chemin déterminé grâce au contenu de&lt;font color=&quot;#00cccc&quot;&gt; l&#39;attribut &quot;action&quot; &lt;/font&gt;dans la balise&lt;font color=&quot;#00cccc&quot;&gt; &amp;lt;form&amp;gt;.&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="319.5" y="410" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-8" value="&lt;b&gt;&lt;font color=&quot;#6dba14&quot;&gt;OUI&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="414" y="360" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-10" value="&lt;b&gt;&lt;font color=&quot;#ff3333&quot;&gt;NON&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="519.5" y="260" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-12" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="QPgLkUB62LOAhg5g5HC0-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="519.5" y="300" as="sourcePoint" />
+            <mxPoint x="569.5" y="250" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="570" y="300" />
+              <mxPoint x="570" y="155" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-13" value="Sommes-nous redirigés vers le fichier :&lt;br&gt;&lt;font color=&quot;#00cccc&quot;&gt;&quot;security.php&quot; &lt;/font&gt;par la méthode&lt;font color=&quot;#00cccc&quot;&gt; &quot;post&quot;,&lt;/font&gt;&lt;br&gt;préciser dans l&#39;attribut&lt;font color=&quot;#00cccc&quot;&gt; &quot;method&quot;&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;/font&gt;du formulaire ?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="249" y="560" width="333.5" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="QPgLkUB62LOAhg5g5HC0-7" target="QPgLkUB62LOAhg5g5HC0-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="620" as="sourcePoint" />
+            <mxPoint x="400" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="QPgLkUB62LOAhg5g5HC0-13" target="QPgLkUB62LOAhg5g5HC0-32">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="414" y="720" as="sourcePoint" />
+            <mxPoint x="413" y="784" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="QPgLkUB62LOAhg5g5HC0-13" target="QPgLkUB62LOAhg5g5HC0-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="543.5" y="638" as="sourcePoint" />
+            <mxPoint x="510" y="470" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="680" y="640" />
+              <mxPoint x="680" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-17" value="&lt;b&gt;&lt;font color=&quot;#ff3333&quot;&gt;NON&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="610" y="600" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-18" value="&lt;b&gt;&lt;font color=&quot;#6dba14&quot;&gt;OUI&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="420" y="740" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-19" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Vérifier l&#39;attribut &lt;font color=&quot;#00cccc&quot;&gt;&quot;action&quot;&lt;/font&gt; et &lt;font color=&quot;#00cccc&quot;&gt;&quot;method&quot;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="520" width="230" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-21" value="Est-ce que &lt;font color=&quot;#00cccc&quot;&gt;$_POST[ &#39; submit &#39; ]&lt;/font&gt; existe?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260.5" y="980" width="320" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-23" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="QPgLkUB62LOAhg5g5HC0-21" target="QPgLkUB62LOAhg5g5HC0-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="940" as="sourcePoint" />
+            <mxPoint x="130" y="500" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="160" y="1045" />
+              <mxPoint x="160" y="155" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-24" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Vérifier de l&#39;existence du bouton &lt;font style=&quot;font-size: 12px;&quot; color=&quot;#00cccc&quot;&gt;name=&quot;submit&quot;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="510" width="220" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-26" value="&lt;b&gt;&lt;font color=&quot;#ff3333&quot;&gt;NON&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="180" y="970" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-27" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="QPgLkUB62LOAhg5g5HC0-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="850" as="sourcePoint" />
+            <mxPoint x="290" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-28" value="&lt;b&gt;&lt;font color=&quot;#6dba14&quot;&gt;OUI&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="430" y="1150" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-29" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="QPgLkUB62LOAhg5g5HC0-21" target="QPgLkUB62LOAhg5g5HC0-30">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="1070" as="sourcePoint" />
+            <mxPoint x="420" y="1220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-30" value="Récupération des valeurs du formulaire&lt;br&gt;grâce à :&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- la superglobale&amp;nbsp;&lt;/span&gt;&lt;font style=&quot;background-color: initial; border-color: var(--border-color);&quot; color=&quot;#00cccc&quot;&gt;$_POST&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;background-color: initial; border-color: var(--border-color);&quot;&gt;- stockage dans différentes&lt;/font&gt;&lt;font style=&quot;background-color: initial; border-color: var(--border-color);&quot; color=&quot;#00cccc&quot;&gt; variables&lt;/font&gt;&lt;/div&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270.5" y="1200" width="300" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-31" value="La connecxion est-elle établie&lt;br&gt;avec la base de donnée (bdd)?&amp;nbsp;&lt;br&gt;&lt;font color=&quot;#00cccc&quot;&gt;&quot;db_connection.php&quot;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="269.5" y="1370" width="300" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-32" value="inclusion de l&#39;instruction&amp;nbsp;&lt;br&gt;&lt;font color=&quot;#00cccc&quot;&gt;require_once&amp;nbsp;&lt;/font&gt;dans le fichier &lt;font color=&quot;#00cccc&quot;&gt;&quot;security.php&quot;&lt;/font&gt;&amp;nbsp; &lt;br&gt;pour la connexion à la base de donnée.&lt;br&gt;&lt;br&gt;Création de la superglobale :&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot; color=&quot;#00cccc&quot;&gt;$_POST&amp;nbsp;&lt;/font&gt;dans le fichier&lt;font style=&quot;border-color: var(--border-color);&quot; color=&quot;#00cccc&quot;&gt;&amp;nbsp;&quot;security.php&quot;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270.75" y="780" width="290" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-33" value="Nous appelons notre fonction &lt;font color=&quot;#00cccc&quot;&gt;&quot; dbConnexion ( ) &quot;&lt;br&gt;&lt;/font&gt;que nous stockons dans une variable afin&lt;br&gt;d&#39;établir&lt;font color=&quot;#00cccc&quot;&gt; la connexion avec la bdd&lt;/font&gt;." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="245" y="1550" width="360" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-34" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="QPgLkUB62LOAhg5g5HC0-30" target="QPgLkUB62LOAhg5g5HC0-31">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="1520" as="sourcePoint" />
+            <mxPoint x="340" y="1470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-35" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.486;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="QPgLkUB62LOAhg5g5HC0-31" target="QPgLkUB62LOAhg5g5HC0-33">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="1520" as="sourcePoint" />
+            <mxPoint x="340" y="1470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-36" value="&lt;b&gt;&lt;font color=&quot;#6dba14&quot;&gt;OUI&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="440" y="1510" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-37" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="QPgLkUB62LOAhg5g5HC0-31" target="QPgLkUB62LOAhg5g5HC0-32">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="1280" as="sourcePoint" />
+            <mxPoint x="700" y="1160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="680" y="1435" />
+              <mxPoint x="680" y="840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-38" value="&lt;b&gt;&lt;font color=&quot;#ff3333&quot;&gt;NON&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="605" y="1400" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QPgLkUB62LOAhg5g5HC0-39" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Vérifier que le fichier&amp;nbsp;&lt;font color=&quot;#00cccc&quot;&gt;&quot;db_connection.php&quot;&lt;br&gt;&lt;/font&gt;soit relié au fichier&lt;font color=&quot;#00cccc&quot;&gt; &quot;security.php&quot;&amp;nbsp;&lt;/font&gt;par le biais&lt;br&gt;de l&#39;instruction&amp;nbsp;&lt;font color=&quot;#00cccc&quot;&gt;&quot;require_once&quot;.&lt;/font&gt;&amp;nbsp;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1090" width="265" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once "../inc/db_connection.php";
 if(isset($_POST['submit'])){
     $email  = htmlentities($_POST['email']);
@@ -35,10 +36,11 @@ if(isset($_POST['submit'])){
             $_SESSION["birthday"] = $utilisateur['birthday'];
             $_SESSION["message"] = $utilisateur['message'];
             $_SESSION["role"] = $utilisateur['role'];
-
+            
             header("Location: ../profil.php");
         }else{
             $_SESSION['erreurmdp'] = "mot de passe incorrect";
+            
             header("Location: ../connexion.php");
         }
     }
