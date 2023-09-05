@@ -1,7 +1,21 @@
-<?php include_once "inc/header.php"; ?>
-<link rel="stylesheet" href="assets/css/style.css">
-<?php include_once "inc/nav.php"; ?>
-
-<!-- le contenue de la page d'accueil -->
-
-<?php include_once "inc/footer.php"; ?>
+<?php 
+include_once "./inc/header.php"; 
+include_once "./model/functions.php"; 
+$listRoom = roomlist();
+?>
+<div class="container d-flex flex-wrap">
+    <?php foreach($listRoom as $room){ ?>
+        <div class="card" style="width: 18rem;">
+        <div class="img_room">
+            <img src="assets/img/<?= $room['room_img']; ?>" class="card-img-top" alt="...">
+        </div>
+            <div class="card-body top">
+              <p class="card-text"><?= $room['price']; ?> €/nuit</p>
+              <p class="card-text"><?= $room['category']; ?></p>
+              <p class="card-text"><?= $room['persons']; ?> Persons</p>
+              <a class="btn btn-info" href="model/db_booking.php?room=<?= $room['id_room']; ?>">Book this Room</a>
+            </div>
+        </div>
+    <?php } ?>
+</div>
+<?php include_once "./inc/footer.php"?>

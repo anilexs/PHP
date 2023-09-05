@@ -7,3 +7,14 @@ body{
 i{
     font-size: 4em;
 }
+.collapse{
+    display: flex;
+    flex-wrap: wrap;
+}
+.img_room{
+    width: 286;
+    height: 196px;
+}
+.top{
+    margin-top: 15px;
+}
