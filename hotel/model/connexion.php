@@ -30,6 +30,7 @@ if(isset($_POST['submit'])){
                 }else{
                     // definir la variabe de session role   
                     $_SESSION['role'] = $userInfo['role']; 
+                    $_SESSION['id_user'] = $userInfo['id_user'];
                     header("Location: http://localhost/PHP/hotel/user_home.php");
                 }
             }else{

@@ -1,4 +1,7 @@
-<?php include_once "inc/header.php"; ?>
+<?php 
+session_start();
+include_once "inc/header.php"; 
+?>
 <link rel="stylesheet" href="assets/css/style.css">
 <?php include_once "inc/nav.php"; ?>
 <div class="container">
