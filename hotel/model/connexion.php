@@ -26,6 +26,7 @@ if(isset($_POST['submit'])){
                 if($userInfo['role'] == "admin"){
                     // definir la variabe de session role
                     $_SESSION['role'] = $userInfo['role']; 
+                    $_SESSION['id_user'] = $userInfo['id_user'];
                     header("Location: http://localhost/PHP/hotel/admin/admin.php");
                 }else{
                     // definir la variabe de session role   

@@ -1,6 +1,9 @@
+<?php 
+session_start();
+// session_destroy(); 
+?>
 <?php include_once "inc/header.php"; ?>
 <link rel="stylesheet" href="assets/css/style.css">
-<?php include_once "inc/nav.php"; ?>
 <div class="container">
     <form action="model/connexion.php" method="post">
         <div class="form-group mt-5 mb-5">

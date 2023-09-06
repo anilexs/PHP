@@ -5,8 +5,8 @@ include_once "./inc/header.php";
 
     <div class="container">
         <form action="model/db_booking.php" method="post">
-            <input type="text" name="id_room" value="<?= $_get['room']; ?>" hidden>
-            <input type="text" name="price" value="<?= $_get['price']; ?>" hidden>
+            <input type="text" name="id_room" value="<?= $_GET['room']; ?>" hidden>
+            <input type="text" name="price" value="<?= $_GET['price']; ?>" hidden>
             <div class="form-group mt-5 mb-5">
     
             <div class="form-group">
