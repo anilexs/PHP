@@ -28,27 +28,31 @@ class User{
     }
     }
     
-    public function connect(){
-        $connection = new DbConnect("localhost" , "cours_db", "root", "");
+        public static function connexion($email, $mdp)
+
+    {
+
+        $connection = new DbConnect("localhost", "cours_db", "root", "");
         $db = $connection->connect();
-        $request = $db->prepare("SELECT * FROM users WHERE email = ?");
-        try{
-        $request->execute(array($this->login));
-        $userInfo = $request->fetch(PDO::FETCH_ASSOC); 
-        
-        if(empty($userInfo)){
-            echo "utilisateur inconnue";
-        }else{
-            // verifier si le mot de passe est correct
-            if(password_verify($this->mdp, $userInfo['password'])){  
-                    $_SESSION['role'] = $userInfo['role']; 
-                    $_SESSION['id_user'] = $userInfo['id_user'];
-                    header("Location: http://localhost/PHP/hotel/user_home.php");
+        // Préparer la requête :
+        $request = $db->prepare('SELECT * FROM utilisateurs WHERE email = ?');
+
+        try {
+            $request->execute(array($email));
+            $user = $request->fetch(PDO::FETCH_ASSOC);
+            if (empty($user)) { // Si $user est vide
+                echo "Utilisateur inconnu";
+            } else {
+                if (password_verify($mdp, $user["mdp"])) {
+                    $_SESSION['prenom'] = $user["prenom"];
+                    header("Location: ../user_page.php");
+                } else {
+                    echo "mauvais mdp petit malin";
+                }
+            }
+        } catch (PDOException $error) {
+            $error->getMessage();
         }
-        
-    }
-}catch(PDOException $e){
-        $e->getMessage();
-    }
+        return $user;
     }
 }
