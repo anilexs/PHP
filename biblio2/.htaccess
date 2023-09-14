@@ -1,0 +1,7 @@
+# activer la regle de reecriture d'url
+RewriteEngine on
+# on verifie si la requete correspond a un repertoire
+RewriteCond ${REQUEST_FILENAME} !d
+# on verifie si la requete correspond a un fichier
+RewriteCond ${REQUEST_FILENAME} !f
+RewriteRule (.*) home.php [L]
