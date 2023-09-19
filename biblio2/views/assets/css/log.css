@@ -1,0 +1,16 @@
+body{
+    /* background-color: gray; */
+    background-image: url(../img/oshi-no-ko.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+}
+table{
+    border-collapse: collapse;
+    background-color: rgb(137, 137, 137);
+    color: white;
+}
+thead{
+    background-color: rgb(137, 137, 137);
+}

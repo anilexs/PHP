@@ -31,9 +31,9 @@ class user{
                 $_SESSION['error_message'] = "Cet email n'existe pas";
             }else if(password_verify($password, $user['password'])){
                 // il a taper le bon mail et le bon mot de passe
-                setcookie("id_user",  $user['id_user'], time() + 96400, "/", "http://localhost/PHP/biblio2/", false, true);
+                setcookie("id_user",  $user['id_user'], time() + 96400, "/", "localhost", false, true);
                 // il a taper le bon mail et le bon mot de passe
-                setcookie("user_role",  $user['role'], time() + 96400, "/", "http://localhost/PHP/biblio2/", false, true);
+                setcookie("user_role",  $user['role'], time() + 96400, "/", "localhost", false, true);
                 // $_SESSION['user_role'] = $user['role']
                 header("Location: http://localhost/PHP/biblio2/list_book.php");
             }else{
@@ -47,12 +47,24 @@ class user{
     public static function logout(){
 
     }
-    // methode pour emprunter un livre
-    public static function borrow(){
-
+    // methode pour avoir l'historique des emprunts d'un membre
+    public static function borrowLog($idUser){
+        // connexion a la bd
+        $db = Database::dbConnect();
+        // preparer la requete
+        $request = $db->prepare("SELECT id_borrow, user_id, book_id, start_date, end_date, id_book, title FROM borrows, books WHERE borrows.book_id = books.id_book AND user_id = ?");
+        // executer la requete
+        try{
+            $request->execute(array($idUser));
+            // recuperer le resultat dans un tableau
+            $borrowList = $request->fetchAll();
+            return $borrowList;
+        }catch(PDOException $e){
+            echo $e->getMessage();
+        }
     }
     // methode pour se desinscrire
     public static function deletAccount(){
-
+        
     }
 }
